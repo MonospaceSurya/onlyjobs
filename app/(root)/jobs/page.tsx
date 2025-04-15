@@ -8,9 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import NoResult from "@/components/shared/NoResult";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { formUrlQuery, removeKeysFromQuery } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton"; // Added Skeleton import
-import { cn } from "@/lib/utils"; // Import cn utility
+import { formUrlQuery, cn } from "@/lib/utils"; // <-- Combined import
 
 // Define the Job interface (adjust based on actual data structure if using API)
 interface IJob {
