@@ -1,4 +1,4 @@
-# 🚀 MyTech Forum (Stack Overflow Clone)
+# 🚀 OnlyJobs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-13.x-black?logo=nextdotjs)](https://nextjs.org/)
@@ -35,14 +35,17 @@ A full-stack Q&A platform inspired by Stack Overflow, built with the modern Next
 
 ## 🖼️ Screenshots
 
-*(Add your screenshots here!)*
-
-*Example:*
-![Screenshot of the Home Page](https://via.placeholder.com/600x400/cccccc/969696.png?text=HomePage+Screenshot)
+![Screenshot of the Home Page](./images/1.png)
 _Fig. 1 - Home Page displaying questions_
 
-![Screenshot of a Question Page](https://via.placeholder.com/600x400/cccccc/969696.png?text=QuestionPage+Screenshot)
-_Fig. 2 - Detailed Question View with Answers_
+![Screenshot of the Community Page](./images/2.png)
+_Fig. 2 - Community Page showing users_
+
+![Screenshot of the Jobs Page](./images/3.png)
+_Fig. 3 - Jobs Listing Page_
+
+![Screenshot of the Sign In Page](./images/4.png)
+_Fig. 4 - User Sign In Page (via Clerk)_
 
 ---
 
@@ -80,7 +83,7 @@ _Fig. 2 - Detailed Question View with Answers_
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/your-username/your-repo-name.git # Replace with your repo link
     cd your-repo-name
     ```
 
@@ -88,9 +91,9 @@ _Fig. 2 - Detailed Question View with Answers_
     ```bash
     npm install
     # or
-    yarn install
+    # yarn install
     # or
-    pnpm install
+    # pnpm install
     ```
 
 3.  **Set up Environment Variables:**
@@ -117,12 +120,13 @@ _Fig. 2 - Detailed Question View with Answers_
 
 4.  **Set up Clerk Webhook:**
     *   You need a public URL for Clerk to send webhooks.
-    *   **For Local Dev:** Use `ngrok` to tunnel your local port (e.g., `ngrok http 3000`).
+    *   **For Local Dev:** Use `ngrok` to tunnel your local port (e.g., `ngrok http 3000`). Get the `https://...` URL.
     *   **For Production:** Use your deployed application URL.
     *   Go to your Clerk Dashboard -> Webhooks -> Add Endpoint.
     *   Enter the URL (`<your-public-url>/api/webhook`).
     *   Select events: `user.created`, `user.updated`, `user.deleted`.
-    *   Create the endpoint and copy the **Signing Secret** into your `.env.local` (for local) or Vercel environment variables (for production) as `NEXT_CLERK_WEBHOOK_SECRET`.
+    *   Create the endpoint and copy the **Signing Secret**.
+    *   Add the secret to `.env.local` (local) or Vercel environment variables (production) as `NEXT_CLERK_WEBHOOK_SECRET`.
 
 5.  **Run the development server:**
     ```bash
@@ -138,7 +142,7 @@ This project is optimized for deployment on [Vercel](https://vercel.com/).
 
 1.  Push your code to a Git repository (GitHub, GitLab, Bitbucket).
 2.  Import the project into Vercel.
-3.  Configure the **Environment Variables** in the Vercel project settings (copy values from your `.env`, **not** `.env.local`). Make sure `NEXT_CLERK_WEBHOOK_SECRET` uses the secret for your *production* webhook endpoint URL.
+3.  Configure the **Environment Variables** in the Vercel project settings (copy values from your `.env`). Ensure `NEXT_CLERK_WEBHOOK_SECRET` uses the secret for your *production* webhook endpoint URL.
 4.  Deploy! Vercel should automatically detect Next.js and build the project.
 
 ---
@@ -170,8 +174,7 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 *   Tailwind Labs
 *   Shadcn
 *   TinyMCE
-*   *(Add any other libraries/resources you relied on)*
 
 ---
 
-*Created by [Your Name/Handle](https://github.com/your-username)*
+*Created by **Surya Santhosh ***
