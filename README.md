@@ -9,8 +9,6 @@
 
 A full-stack Q&A platform inspired by Stack Overflow, built with the modern Next.js App Router, MongoDB, Tailwind CSS, and Clerk for authentication. Ask questions, share knowledge, and connect with a community of tech enthusiasts!
 
-**✨ Live Demo:** [Link to your deployed Vercel app (e.g., mytech-forum.vercel.app)](https://your-deployment-link.vercel.app) *(Replace or remove if not deployed)*
-**🔧 Repository:** [Link to your GitHub repository](https://github.com/your-username/your-repo-name) *(Replace with your actual link)*
 
 ---
 
@@ -137,8 +135,6 @@ _Fig. 4 - User Sign In Page (via Clerk)_
 ---
 
 ## 🚀 Deployment
-
-This project is optimized for deployment on [Vercel](https://vercel.com/).
 
 1.  Push your code to a Git repository (GitHub, GitLab, Bitbucket).
 2.  Import the project into Vercel.
